@@ -15,6 +15,7 @@ export default function Index() {
   const [facing, setFacing] = useState<CameraType>('back');
   const [permission, requestPermission] = useCameraPermissions();
   const [isCameraReady, setIsCameraReady] = useState(false);
+    
   
 
   if (!permission) {
